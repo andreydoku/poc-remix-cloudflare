@@ -1,5 +1,5 @@
 
-import { LoaderFunctionArgs, LoaderFunction } from "@remix-run/node";
+import { LoaderFunctionArgs, LoaderFunction } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import { todosTable } from "~/server/TodosTable.server";
 import { Todo } from "~/server/Todo";
