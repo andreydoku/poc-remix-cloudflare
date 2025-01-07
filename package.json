@@ -17,6 +17,7 @@
     "@aws-sdk/client-ses": "^3.716.0",
     "@aws-sdk/lib-dynamodb": "^3.716.0",
     "@aws-sdk/util-dynamodb": "^3.716.0",
+    "@marsidev/react-turnstile": "^1.1.0",
     "@remix-run/cloudflare": "^2.15.2",
     "@remix-run/cloudflare-pages": "^2.15.2",
     "@remix-run/react": "^2.15.2",

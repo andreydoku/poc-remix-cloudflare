@@ -3,6 +3,7 @@ import { LoaderFunctionArgs, LoaderFunction } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import { todosTable } from "~/server/TodosTable.server";
 import { Todo } from "~/server/Todo";
+
 export let loader:LoaderFunction = async ( { request , context , params } : LoaderFunctionArgs ) => {
 	
 	//return todosTable.getAllTodos();
@@ -17,7 +18,7 @@ export let loader:LoaderFunction = async ( { request , context , params } : Load
 
 export default function Page1() {
 	
-	const allTodos:Todo[] = useLoaderData<typeof loader>();
+	const allTodos:Todo[] = useLoaderData<typeof loader>() as Todo[];
 	
 	
 	return (
